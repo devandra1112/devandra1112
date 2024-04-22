@@ -4,25 +4,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RegEx</title>
+    <title>RegEx Validation</title>
+    <!-- <link rel="stylesheet" href="../tailwind-components/style/output.css"> -->
 </head>
 
 <body>
-        <p class="text-black font-semibold">Syarat Valid = tidak boleh dimulai dengan angka</p>
-
+    <section>
+        <!-- Box Input Pertama -->
         <div class="relative w-full">
-            <input id="regexInputAndra" type="text" name="regexInput" placeholder="RegExp" value=""/>
-
-            <label for="regexLabel">
-                Your username </label>
-
-            <small>
-                <span id="validation-text-andra">Validation message.</span>
-                <span class="text-slate-500">1/10</span>
-            </small>
+            <label for="regexInputdra">Regex dra: Minimal 10 karakter, tanpa angka</label><br>
+            <input id="regexInputdra" type="text" placeholder="Masukkan input untuk regex satu"/>
+            <p><small><span id="validation-text-dra">Validation message.</span></small></p>
         </div>
 
+        <!-- Box Input Kedua -->
+        <div class="relative w-full">
+            <label for="regexInputdra2">Regex Dua: Minimal 8 karakter, harus mengandung setidaknya satu huruf besar, satu huruf kecil, dan satu angka</label><br>
+            <input id="regexInputdra2" type="text" placeholder="Masukkan input untuk regex dua"/>
+            <p><small><span id="validation-text-dra2">Validation message.</span></small></p>
+        </div>
 
+        <!-- Box Input Ketiga -->
+        <div class="relative w-full">
+            <label for="regexInputdra3">Regex Tiga: Minimal 6 karakter, maksimal 12 karakter, hanya huruf dan angka</label><br>
+            <input id="regexInputdra3" type="text" placeholder="Masukkan input untuk regex tiga"/>
+            <p><small><span id="validation-text-dra3">Validation message.</span></small></p>
+        </div>
+
+        <!-- Box Input Keempat -->
+        <div class="relative w-full">
+            <label for="regexInputdra4">Regex Empat: Format email yang valid</label><br>
+            <input id="regexInputdra4" type="text" placeholder="Masukkan input untuk regex empat"/>
+            <p><small><span id="validation-text-dra4">Validation message.</span></small></p>
+        </div>
+
+        <!-- Box Input Kelima -->
+        <div class="relative w-full">
+            <label for="regexInputdra5">Regex Lima: Hanya menerima angka dengan panjang tepat 5 karakter</label><br>
+            <input id="regexInputdra5" type="text" placeholder="Masukkan input untuk regex lima"/>
+            <p><small><span id="validation-text-dra5">Validation message.</span></small></p>
+        </div>
     </section>
 
     <script src="script.js"></script>
